@@ -1,0 +1,23 @@
+<mvc:View controllerName="ui5.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"    
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    <FeedInput id="inpuId"
+		post="onPost"
+		showIcon="true" />
+        
+    <List id="L1"
+		headerText="Questions">
+		<ObjectListItem id="obj1"
+           title="What does HTML stands for?"
+           type="Active"
+           press="onPress"
+        ></ObjectListItem>
+        <ObjectListItem id="obj2"
+           title="What does CSS stand for?"
+           type="Active"
+           press="onPress1"
+        ></ObjectListItem>
+	</List>
+    </Page>
+</mvc:View>
